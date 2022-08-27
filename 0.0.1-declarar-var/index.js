@@ -1,3 +1,7 @@
 let nome = 'Artur';
 
-console.log(nome);
+let idade = '47';
+
+let vegetariano = false;
+
+console.log(nome, '-', idade, '-', vegetariano);
