@@ -2,8 +2,6 @@
 //
 
 function exibirBoleto(valor, diasAtraso) {
-  console.log('Artur, tem ' + idade + ' anos.');
-
   if (dataAtual < dataVencimento) {
     (multaDias = 0), 33 * multadias;
 
