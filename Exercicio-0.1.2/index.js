@@ -5,8 +5,9 @@ function comprasMercado(valor, cartaoLoja, totalCartaoConvenio) {
     totalCartaoLoja = valor - (valor * 0.15);
   elseif (totalCartaoConvenio === true) {
     totalCartaoConvenio = (valor * 0.10);
-  }
+
     return 'Valor total da compra' + multaDias;
+    
   }
 }
 
