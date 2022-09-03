@@ -2,9 +2,9 @@
 //
 
 function getNome() {
-	return 'mathias';
+  return 'Artur';
 }
-getNome(); //mathias
+getNome(); //Artur
 
 /*
 function comprasMercado(valor, cartaoLoja, totalCartaoConvenio) {
