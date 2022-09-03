@@ -1,13 +1,15 @@
-function comprasMercado(valor, cartaoLoja, totalCartaoConvenio) {
-  if (cartaoLoja && totalCartaoConvenio) {
+function compra(valor, isConvenio, isCartao) {
+  const descontoTotal = isConvenio && isCartao;
+  if (descontoTotal) {
     return valor - valor * 0.15;
   }
-  elseif(cartaoLoja === true && totalCartaoConvenio === false);
-  {
+  const descontoParcial = isConvenio || isCartao;
+  if (descontoParcial) {
     return valor - valor * 0.1;
   }
+  return valor;
 }
 
-const resultado = comprasMercado(100, true, true);
-
-console.log(resultado);
+console.log(compra(100, true, true));
+console.log(compra(100, false, true));
+console.log(compra(100, false, false));
