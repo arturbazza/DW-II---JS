@@ -2,7 +2,7 @@ function comprasMercado(valor, cartaoLoja, totalCartaoConvenio) {
   if (cartaoLoja && totalCartaoConvenio) {
     return valor - valor * 0.15;
   }
-  elseif(totalCartaoConvenio != cartaoLoja);
+  elseif(cartaoLoja === true && totalCartaoConvenio === false);
   {
     return valor - valor * 0.1;
   }
